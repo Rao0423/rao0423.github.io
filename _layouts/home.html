@@ -15,10 +15,12 @@ layout: default
       <a href="{{ '/essays/' | relative_url }}">All essays →</a>
     </div>
 
-    {% assign essays = site.posts | where_exp: 'post', "post.kind != 'note' and post.hidden != true" %}
     <ul class="rao-writing-list rao-writing-list--featured">
-      {% for post in essays limit: 3 %}
-        {% include writing-item.html post=post %}
+      {% for feature in site.data.featured_essays %}
+        {% assign post = site.posts | where: 'title', feature.title | first %}
+        {% if post %}
+          {% include writing-item.html post=post thumbnail=feature.thumbnail %}
+        {% endif %}
       {% endfor %}
     </ul>
   </section>
