@@ -8,9 +8,9 @@ permalink: /essays/
   <p class="rao-index-intro">Longer pieces on games, philosophy, art, and whatever else stays in my head long enough to become an essay.</p>
 
   {% assign essays = site.posts | where_exp: 'post', "post.kind != 'note' and post.hidden != true" %}
-  <ul class="rao-writing-list">
+  <ul class="rao-writing-list rao-writing-list--plain">
     {% for post in essays %}
-      {% include writing-item.html post=post %}
+      {% include writing-item.html post=post show_image=false %}
     {% endfor %}
   </ul>
 </div>
