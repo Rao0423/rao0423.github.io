@@ -1,0 +1,39 @@
+---
+layout: default
+---
+
+<div class="rao-home">
+  <section class="rao-home-intro">
+    <h1>Rao Fu</h1>
+    <p class="rao-home-kicker">Games · Philosophy · Life</p>
+    <p class="rao-intro-copy">A running record of things played, seen, felt, and remembered.</p>
+  </section>
+
+  <section class="rao-home-section" aria-labelledby="recent-writing">
+    <div class="rao-section-head">
+      <h2 id="recent-writing">Essays</h2>
+      <a href="{{ '/essays/' | relative_url }}">All essays →</a>
+    </div>
+
+    {% assign essays = site.posts | where_exp: 'post', "post.kind != 'note' and post.hidden != true" %}
+    <ul class="rao-writing-list">
+      {% for post in essays limit: 5 %}
+        <li class="rao-writing-item">
+          <a href="{{ post.url | relative_url }}">
+            <time class="rao-writing-date" datetime="{{ post.date | date_to_xmlschema }}">{{ post.date | date: '%Y.%m.%d' }}</time>
+            <div>
+              <h3 class="rao-writing-title">{{ post.title }}</h3>
+              <p class="rao-writing-description">
+                {% if post.description %}
+                  {{ post.description }}
+                {% else %}
+                  {{ post.excerpt | strip_html | strip_newlines | truncate: 120 }}
+                {% endif %}
+              </p>
+            </div>
+          </a>
+        </li>
+      {% endfor %}
+    </ul>
+  </section>
+</div>
