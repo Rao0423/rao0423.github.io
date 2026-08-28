@@ -1,7 +1,7 @@
 <!-- Custom top navigation -->
 <header id="topbar-wrapper" class="rao-topbar flex-shrink-0" aria-label="Top Bar">
   <div id="topbar" class="rao-topbar-inner d-flex align-items-center justify-content-between h-100">
-    <!-- Kept for Chirpy's built-in search script; intentionally hidden. -->
+    <!-- Kept for Chirpy's built-in scripts; intentionally hidden. -->
     <button type="button" id="sidebar-trigger" class="d-none" aria-label="Sidebar"></button>
     <div id="topbar-title" class="d-none"></div>
 
@@ -15,7 +15,7 @@
 
     <div class="rao-nav-tools d-flex align-items-center">
       <button type="button" id="search-trigger" class="btn btn-link rao-search-trigger" aria-label="Search">
-        <i class="fas fa-search fa-fw"></i><span>Search</span>
+        <span>Search</span><i class="fas fa-search fa-fw"></i>
       </button>
 
       <search id="search" class="align-items-center">
@@ -44,12 +44,12 @@
           >
             <i class="fa-regular fa-sun" data-theme-mode="light"></i>
             <i class="fa-regular fa-moon" data-theme-mode="dark"></i>
-            <i class="fa-solid fa-display" data-theme-mode="system"></i>
+            <i class="fa-solid fa-circle-half-stroke" data-theme-mode="system"></i>
           </button>
           <ul class="dropdown-menu dropdown-menu-end rounded-3 mt-1 p-1">
             <li><button class="dropdown-item d-flex align-items-center" type="button" data-theme-mode="light"><i class="fa-regular fa-sun me-2"></i>{{ site.data.locales[include.lang].theme.light }}</button></li>
             <li><button class="dropdown-item d-flex align-items-center" type="button" data-theme-mode="dark"><i class="fa-regular fa-moon me-2"></i>{{ site.data.locales[include.lang].theme.dark }}</button></li>
-            <li><button class="dropdown-item d-flex align-items-center" type="button" data-theme-mode="system"><i class="fa-solid fa-display me-2"></i>{{ site.data.locales[include.lang].theme.system }}</button></li>
+            <li><button class="dropdown-item d-flex align-items-center" type="button" data-theme-mode="system"><i class="fa-solid fa-circle-half-stroke me-2"></i>{{ site.data.locales[include.lang].theme.system }}</button></li>
           </ul>
         </div>
       {% endunless %}

@@ -9,31 +9,38 @@ layout: default
     <p class="rao-intro-copy">A running record of things played, seen, felt, and remembered.</p>
   </section>
 
-  <section class="rao-home-section" aria-labelledby="recent-writing">
+  <section class="rao-home-section" aria-labelledby="few-essays">
     <div class="rao-section-head">
-      <h2 id="recent-writing">Essays</h2>
+      <h2 id="few-essays">A few essays</h2>
       <a href="{{ '/essays/' | relative_url }}">All essays →</a>
     </div>
 
     {% assign essays = site.posts | where_exp: 'post', "post.kind != 'note' and post.hidden != true" %}
-    <ul class="rao-writing-list">
-      {% for post in essays limit: 5 %}
-        <li class="rao-writing-item">
-          <a href="{{ post.url | relative_url }}">
-            <time class="rao-writing-date" datetime="{{ post.date | date_to_xmlschema }}">{{ post.date | date: '%Y.%m.%d' }}</time>
-            <div>
-              <h3 class="rao-writing-title">{{ post.title }}</h3>
-              <p class="rao-writing-description">
-                {% if post.description %}
-                  {{ post.description }}
-                {% else %}
-                  {{ post.excerpt | strip_html | strip_newlines | truncate: 120 }}
-                {% endif %}
-              </p>
-            </div>
-          </a>
-        </li>
+    <ul class="rao-writing-list rao-writing-list--featured">
+      {% for post in essays limit: 3 %}
+        {% include writing-item.html post=post %}
       {% endfor %}
     </ul>
   </section>
+
+  {% assign notes = site.posts | where: 'kind', 'note' | where_exp: 'post', 'post.hidden != true' %}
+  {% if notes.size > 0 %}
+    <section class="rao-home-section rao-notes-section" aria-labelledby="recent-notes">
+      <div class="rao-section-head">
+        <h2 id="recent-notes">Recent notes</h2>
+        <a href="{{ '/notes/' | relative_url }}">All notes →</a>
+      </div>
+
+      <ul class="rao-note-list">
+        {% for post in notes limit: 5 %}
+          <li>
+            <a href="{{ post.url | relative_url }}">
+              <time datetime="{{ post.date | date_to_xmlschema }}">{{ post.date | date: '%b %-d, %Y' }}</time>
+              <span>{{ post.title }}</span>
+            </a>
+          </li>
+        {% endfor %}
+      </ul>
+    </section>
+  {% endif %}
 </div>
