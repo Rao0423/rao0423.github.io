@@ -1,0 +1,375 @@
+/* Rao Fu — light structural layer on top of Chirpy 7.6 */
+
+:root {
+  --rao-content-width: 920px;
+  --rao-nav-width: 1040px;
+}
+
+/* Remove the default left rail and right utility panel. */
+#sidebar,
+#panel-wrapper {
+  display: none !important;
+}
+
+#main-wrapper {
+  margin-left: 0 !important;
+  transform: none !important;
+}
+
+#main-wrapper > .container {
+  max-width: var(--rao-nav-width) !important;
+  padding-left: 1.5rem !important;
+  padding-right: 1.5rem !important;
+}
+
+#main-wrapper > .container > .row {
+  justify-content: center !important;
+}
+
+main.col-12,
+main.col-lg-11,
+main.col-xl-9,
+#tail-wrapper {
+  flex: 0 0 100% !important;
+  width: 100% !important;
+  max-width: var(--rao-content-width) !important;
+  padding-left: 0 !important;
+  padding-right: 0 !important;
+  margin-left: auto !important;
+  margin-right: auto !important;
+}
+
+/* Top navigation */
+#topbar-wrapper.rao-topbar {
+  position: sticky;
+  top: 0;
+  z-index: 1020;
+  height: 4.5rem;
+  background: color-mix(in srgb, var(--main-bg) 92%, transparent);
+  -webkit-backdrop-filter: blur(12px);
+  backdrop-filter: blur(12px);
+  border-bottom: 1px solid var(--main-border-color, rgba(127, 127, 127, 0.2));
+}
+
+.rao-topbar-inner {
+  width: 100%;
+  max-width: var(--rao-nav-width);
+  margin: 0 auto;
+  padding: 0 0.25rem;
+}
+
+.rao-primary-nav {
+  display: flex;
+  align-items: center;
+  gap: 1.65rem;
+  white-space: nowrap;
+}
+
+.rao-primary-nav a {
+  position: relative;
+  color: var(--text-color);
+  text-decoration: none;
+  font-size: 0.95rem;
+  font-weight: 500;
+  letter-spacing: 0.01em;
+  opacity: 0.78;
+  transition: opacity 0.2s ease;
+}
+
+.rao-primary-nav a:hover,
+.rao-primary-nav a.active {
+  opacity: 1;
+  color: var(--heading-color, var(--text-color));
+}
+
+.rao-primary-nav a.active::after {
+  content: '';
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: -0.55rem;
+  height: 1px;
+  background: currentColor;
+}
+
+.rao-nav-tools {
+  gap: 0.4rem;
+  margin-left: 1.5rem;
+}
+
+.rao-search-trigger,
+.rao-mode-toggle {
+  color: var(--text-color) !important;
+  text-decoration: none !important;
+  box-shadow: none !important;
+}
+
+.rao-search-trigger {
+  gap: 0.3rem;
+  align-items: center;
+  font-size: 0.9rem;
+}
+
+.rao-mode-toggle {
+  width: 2.25rem;
+  height: 2.25rem;
+  border-radius: 50%;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.rao-mode-toggle:hover {
+  background: var(--button-bg, rgba(127, 127, 127, 0.08));
+}
+
+/* Replicate Chirpy's mode-icon visibility outside the old sidebar. */
+#mode-toggle > i {
+  display: none;
+}
+
+:root[data-bs-theme='light'][data-theme-persisted] #mode-toggle > i[data-theme-mode='light'],
+:root[data-bs-theme='dark'][data-theme-persisted] #mode-toggle > i[data-theme-mode='dark'],
+:root:not([data-theme-persisted]) #mode-toggle > i[data-theme-mode='system'] {
+  display: inline-block;
+}
+
+.rao-mode-group #mode-toggle + .dropdown-menu {
+  background: var(--menu-bg);
+  border-color: var(--menu-border-color);
+  box-shadow: var(--menu-shadow-color) 0 1px 6px;
+}
+
+.rao-mode-group .dropdown-item {
+  color: var(--text-color);
+  font-size: 0.9rem;
+}
+
+.rao-mode-group .dropdown-item.active,
+.rao-mode-group .dropdown-item:hover {
+  background: var(--menu-highlight-bg);
+  color: var(--text-color);
+}
+
+/* Search: compact input on desktop, icon-triggered overlay on small screens. */
+@media (min-width: 768px) {
+  .rao-topbar #search {
+    display: flex !important;
+    width: 11rem;
+    margin-left: 0.25rem !important;
+  }
+
+  .rao-topbar #search-trigger,
+  .rao-topbar #search-cancel {
+    display: none !important;
+  }
+}
+
+/* Home */
+.rao-home {
+  padding-top: 4.5rem;
+  padding-bottom: 1rem;
+}
+
+.rao-home-intro {
+  padding-bottom: 3.25rem;
+  border-bottom: 1px solid var(--main-border-color, rgba(127, 127, 127, 0.2));
+}
+
+.rao-home-intro h1 {
+  margin: 0 0 0.55rem;
+  font-size: clamp(2.25rem, 5vw, 3.5rem);
+  font-weight: 650;
+  letter-spacing: -0.04em;
+}
+
+.rao-home-kicker {
+  margin: 0 0 1.25rem;
+  color: var(--text-muted-color);
+  font-size: 1rem;
+  letter-spacing: 0.04em;
+}
+
+.rao-home-intro .rao-intro-copy {
+  max-width: 640px;
+  margin: 0;
+  color: var(--text-color);
+  font-size: 1.08rem;
+  line-height: 1.75;
+  opacity: 0.82;
+}
+
+.rao-home-section,
+.rao-index-page {
+  padding-top: 3rem;
+}
+
+.rao-section-head {
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+  gap: 1rem;
+  margin-bottom: 0.75rem;
+}
+
+.rao-section-head h2,
+.rao-index-page h1 {
+  margin: 0;
+  font-size: 1.35rem;
+  font-weight: 620;
+  letter-spacing: -0.02em;
+}
+
+.rao-section-head a {
+  color: var(--text-muted-color);
+  text-decoration: none;
+  font-size: 0.9rem;
+}
+
+.rao-writing-list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.rao-writing-item {
+  border-top: 1px solid var(--main-border-color, rgba(127, 127, 127, 0.18));
+}
+
+.rao-writing-item:last-child {
+  border-bottom: 1px solid var(--main-border-color, rgba(127, 127, 127, 0.18));
+}
+
+.rao-writing-item > a {
+  display: grid;
+  grid-template-columns: 6.5rem minmax(0, 1fr);
+  gap: 1.25rem;
+  padding: 1.4rem 0;
+  color: inherit;
+  text-decoration: none;
+}
+
+.rao-writing-date {
+  padding-top: 0.15rem;
+  color: var(--text-muted-color);
+  font-size: 0.82rem;
+  font-variant-numeric: tabular-nums;
+}
+
+.rao-writing-title {
+  margin: 0 0 0.4rem;
+  color: var(--heading-color, var(--text-color));
+  font-size: 1.08rem;
+  font-weight: 600;
+  line-height: 1.45;
+}
+
+.rao-writing-description {
+  margin: 0;
+  color: var(--text-muted-color);
+  font-size: 0.92rem;
+  line-height: 1.6;
+}
+
+.rao-writing-item > a:hover .rao-writing-title {
+  text-decoration: underline;
+  text-decoration-thickness: 1px;
+  text-underline-offset: 0.2em;
+}
+
+.rao-empty-note {
+  margin-top: 1.25rem;
+  color: var(--text-muted-color);
+}
+
+/* Make regular pages/posts feel centered and editorial rather than dashboard-like. */
+main > .container,
+#post-wrapper {
+  max-width: 100%;
+}
+
+#tail-wrapper > :not(script) {
+  margin-top: 2.5rem;
+}
+
+@media (max-width: 767px) {
+  #main-wrapper > .container {
+    padding-left: 1.15rem !important;
+    padding-right: 1.15rem !important;
+  }
+
+  #topbar-wrapper.rao-topbar {
+    height: 3.9rem;
+  }
+
+  .rao-topbar-inner {
+    padding: 0;
+    gap: 0.6rem;
+  }
+
+  .rao-primary-nav {
+    gap: 1rem;
+    overflow-x: auto;
+    scrollbar-width: none;
+    flex: 1 1 auto;
+  }
+
+  .rao-primary-nav::-webkit-scrollbar {
+    display: none;
+  }
+
+  .rao-primary-nav a {
+    font-size: 0.88rem;
+  }
+
+  .rao-nav-tools {
+    margin-left: 0;
+    flex: 0 0 auto;
+  }
+
+  .rao-topbar #search {
+    display: none;
+  }
+
+  .rao-topbar #search.d-flex {
+    display: flex !important;
+    position: absolute;
+    left: 0;
+    right: 5.5rem;
+    z-index: 4;
+    background: var(--main-bg);
+  }
+
+  .rao-topbar #search-trigger {
+    display: inline-flex !important;
+    padding-left: 0.35rem;
+    padding-right: 0.35rem;
+  }
+
+  .rao-topbar #search-trigger span {
+    display: none;
+  }
+
+  #topbar:has(#search.d-flex) .rao-primary-nav {
+    visibility: hidden;
+  }
+
+  .rao-home {
+    padding-top: 3rem;
+  }
+
+  .rao-home-intro {
+    padding-bottom: 2.5rem;
+  }
+
+  .rao-home-section,
+  .rao-index-page {
+    padding-top: 2.25rem;
+  }
+
+  .rao-writing-item > a {
+    grid-template-columns: 1fr;
+    gap: 0.4rem;
+    padding: 1.2rem 0;
+  }
+}
