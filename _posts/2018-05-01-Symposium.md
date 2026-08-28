@@ -30,7 +30,7 @@ pin: false
 斐德若的观点几乎代表了人们一般意义上对爱神和爱的看法，即爱神是伟大而完美的神，爱是走向高尚的阶梯。
 
 <figure align="center">
-<img src="/assets/img/legacy/图1.png" style="width:70%">
+<img alt="" src="/assets/img/legacy/图1.png" style="width:70%">
 <figcaption>图1 "The Birth of Venus" Botticelli,Sandro, 1485</figcaption>
 </figure>  
 
@@ -61,7 +61,7 @@ pin: false
 从他们几人的表述可以看出，古希腊人认为爱女性和男性并无分别，本质上都是合乎自然的。而只是他们区分了主动的求爱者，和被爱者，前者通常是年长有德性之人，而后者是貌美健康、强健而勇敢的青年。或是按照阿里斯托芬的观念，不论同性还是异性之间，都是基于一种对整全的渴望，因为他们曾经都共同是一个男性整体的一部分。再进一步说，不仅仅是整全，实际上他们在灵魂中有深度的共鸣，是同声同气之人，是原本属于自己的一部分的重新拥有——这也表现了爱在某种程度上是极度自私的，因为爱是为了另一半，而另一边本身就是曾经自己的一部分。  
 
 <figure align="center">
-<img src="/assets/img/legacy/图2.png" style="width:50%">
+<img alt="" src="/assets/img/legacy/图2.png" style="width:50%">
 <figcaption>图2 "The Death of Hyacinth", Broc,Jean, 1801</figcaption>
 </figure>  
 
@@ -70,7 +70,7 @@ pin: false
 在《风信子之死》（图2）这幅画中，不论是黑夜还是白天的版本，都满溢着爱欲的热烈与悲痛。赤身裸体不是淫荡，因为一种全身心地被他人吸引的爱，本身就是超出性的领域更高层的追逐。这甚至可以说是一种悲壮，因为这种对整全的追逐，或许终其一生都可能只是“追逐”，永远得不到那属己的伴侣。更痛苦的或许是，在曾经有过完整后，因为种种不可抗力，再次回到缺失——由于死亡、由于必朽。
 
 <figure align="center">
-<img src="/assets/img/legacy/图3.png" style="width:50%">
+<img alt="" src="/assets/img/legacy/图3.png" style="width:50%">
 <figcaption>图3 "The Death of Hyacinth", Tiepolo, Giovanni Battista, 1752-53</figcaption>
 </figure>  
 
@@ -80,7 +80,7 @@ pin: false
 除却同性之爱的整全，阿里斯托芬的爱欲观念在异性的爱恋中亦可看到影子。  
 
 <figure align="center">
-<img src="/assets/img/legacy/图4.png" style="width:50%">
+<img alt="" src="/assets/img/legacy/图4.png" style="width:50%">
 <figcaption>图4 "Pygmalion and Galatea" Jean-Léon Gérôme,1890</figcaption>
 </figure>  
 
@@ -99,7 +99,7 @@ pin: false
 由这样的观念，我们可以更好地理解关于苏格拉底的一些艺术作品。 
 
 <figure align="center">
-<img src="/assets/img/legacy/图5.png" style="width:70%">
+<img alt="" src="/assets/img/legacy/图5.png" style="width:70%">
 <figcaption>图5 "The Death of Socrates", David, Jacques-Louis, 1787</figcaption>
 </figure>  
 
@@ -114,7 +114,7 @@ pin: false
 于是仿佛智慧之光在照耀苏格拉底，或是哈得斯的最好的神们已经在期盼苏格拉底灵魂的到来；于是明明是死亡，光亮却让人肃然起敬、心生勇气，这种勇气也正是来源于苏格拉底对于最高存在知识的爱欲，他在追寻，一个奇怪的、面貌有些丑陋的、很难称得上完美的人在追求一些难以达到的东西，却正因此而值得赞美。  
 
 <figure align="center">
-<img src="/assets/img/legacy/图6.png" style="width:70%">
+<img alt="" src="/assets/img/legacy/图6.png" style="width:70%">
 <figcaption>图6 “The Death of Socrates” Cignaroli, Giambettino, 1762</figcaption>
 </figure>  
 
@@ -125,14 +125,14 @@ pin: false
 在这样的理解基础之上，再看其他的关于《苏格拉底之死》的作品，便有了比较的视野。同为早期新古典主义的意大利画家所作的同样题材（图6），却少了太多“英雄”的色彩。的确，真正的历史或许更接近于第二幅作品的刻画——苍白衰老的苏格拉底虚弱地倒在监狱的地上，将要服毒酒而死去。但以他充沛的爱欲、视死亡为生命重新开始的智慧，能坦荡平静、不逃避地承担本不应当的罪名而进入监狱，更能勇敢地走向死亡。第一幅画，或许是对现实的某种扭曲，但某种程度上更贴近于真实——一个哲人形象的真实，而非仅仅借助一个故事而忽视了最重要的内涵。  
 
 <figure align="center">
-<img src="/assets/img/legacy/图7.png" style="width:70%">
+<img alt="" src="/assets/img/legacy/图7.png" style="width:70%">
 <figcaption>图7 “Diana and Endymion” FRAGONARD, Jean-Honoré, 1753-1756 </figcaption>
 </figure>  
 
 从对抽象之物的爱，再来看关于具体的人之爱，苏格拉底的爱欲观念亦能给予我们欣赏艺术品新的视角。洛可可艺术家让·奥诺雷·弗拉贡纳尔在这幅画（图6）中刻画的是月亮女神戴安娜和凡人埃迪米翁的故事。月亮女神爱上了这个凡间的男孩，但问题在于凡人终有一死，无法与她一起长相厮守；于是他让自己沉睡在自己的梦中，使之永远不会变老。这其实揭示出希腊人、甚至是所有人的本能心愿都是希望最美的东西可以永恒。更普遍的是，人们在说渴望什么的时候，大多数时候自己已经拥有、并不缺乏；缺乏的只是一种永恒。爱欲正是这样永不满足的渴望，它不似《会饮》中最初的三人所描述的那样美好和完美、由高尚而来并带来幸福；它更是一种焦灼与不安，在不朽与有朽之间渴望着永恒。所以尽管洛可可的绘画风格让这本来悲剧性的爱情看上去甜美而幸福，但这幅画其他的一些细节却透露出了爱欲之难全。比如月亮女神悬于空中，伸出手臂好像在施予沉睡的法术，却更像希望触碰自己的爱人而不得的无力。而那少年受了神性之法，却仍是凡间踏着坚实大地的人，不知是否做着天上人间的梦，也不知是否真的感受到了他所渴求的爱情。
 
 <figure align="center">
-<img src="/assets/img/legacy/图8.png" style="width:50%">
+<img alt="" src="/assets/img/legacy/图8.png" style="width:50%">
 <figcaption>图8 "Aurora and Tithonus", Giovanni Da San Giovanni, 1634-35</figcaption>
 </figure>  
 
@@ -168,7 +168,7 @@ pin: false
 也即，苏格拉底并不希望用情爱的欲望毁掉这种纯粹的帮助提升的关系；他们的确互相爱欲，但是苏格拉底对阿尔西比亚德的爱在于希望指引他通过攀登爱的阶梯，超过对作为老师的他的欲求、达到对最高存在、美本身等；但阿尔西比亚德却更关注个人和城邦事务，而非真正的智慧。  
 
 <figure align="center">
-<img src="/assets/img/legacy/图9.png" style="width:70%">
+<img alt="" src="/assets/img/legacy/图9.png" style="width:70%">
 <figcaption>图9 "Plato’s Symposium", Anselm Feuerbach</figcaption>
 </figure>  
 
@@ -179,7 +179,7 @@ pin: false
 鲁本斯曾画过同样的片段（图10），表现有类似的地方，也有不同的趣味。 二人的布局类似，皆是阿尔西比亚德从左边闯入酒宴，据研究 ，他身后跟随着两个酒神的信徒，象征着他醉酒的状态，且为了衬托阿尔西比亚德的主体地位而笔痕表现非常淡。同样，他戴着柏拉图所描述的紫罗兰和常春藤编织的花环，象征着狂欢者；而他手拿着花环和丝带，似乎要鼓他人去喝酒、传递这种醉饮欢乐。他第一个接触到的人同样是阿伽通，但阿尔西比亚德却亦有想避过他的意思——只因他看见了远一点地方的苏格拉底。他左手低举的花环要迎接这位热情的、张开双臂欢迎他的宴会主人，但右手高举着的花环，一定是朝向苏格拉底。
 
 <figure align="center">
-<img src="/assets/img/legacy/图10.png" style="width:70%">
+<img alt="" src="/assets/img/legacy/图10.png" style="width:70%">
 <figcaption>图10 "Plato’s Symposium", Rubens, Peter Paul</figcaption>
 </figure>  
 
