@@ -31,7 +31,7 @@ github:
 social:
   # Change to your full name.
   # It will be displayed as the default author of the posts and the copyright owner in the Footer
-  name: Rao
+  name: Rao Fu
   email: 
   fediverse_handle: # fill in your fediverse handle. E.g. "@username@domain.com"
   links:
@@ -151,7 +151,7 @@ pwa:
     # Usually its value is the `baseurl` of another website that
     # shares the same domain name as the current website.
     deny_paths:
-      # - "/example"  # URLs match `<SITE_URL>/example/*` will not be cached by the PWA
+      # - "/example"  # URLs match `<SITE_URL>/example/*` will not be cached by PWA
 
 paginate: 10
 
