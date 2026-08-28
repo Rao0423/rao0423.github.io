@@ -1,0 +1,30 @@
+{% assign post = include.post %}
+{% assign thumbnail = post.thumbnail | default: site.data.post_thumbnails[post.url] %}
+<li class="rao-writing-item{% unless thumbnail %} rao-writing-item--text{% endunless %}">
+  <a href="{{ post.url | relative_url }}">
+    {% if thumbnail %}
+      <div class="rao-writing-thumb" aria-hidden="true">
+        <img src="{{ thumbnail | relative_url }}" alt="" loading="lazy">
+      </div>
+    {% endif %}
+
+    <div class="rao-writing-copy">
+      <div class="rao-writing-meta">
+        <time datetime="{{ post.date | date_to_xmlschema }}">{{ post.date | date: '%b %Y' }}</time>
+        {% if post.categories.size > 0 %}
+          <span class="rao-meta-dot">·</span>
+          <span>{{ post.categories | first }}</span>
+        {% endif %}
+      </div>
+
+      <h3 class="rao-writing-title">{{ post.title }}</h3>
+      <p class="rao-writing-description">
+        {% if post.description %}
+          {{ post.description }}
+        {% else %}
+          {{ post.excerpt | strip_html | strip_newlines | truncate: 120 }}
+        {% endif %}
+      </p>
+    </div>
+  </a>
+</li>
