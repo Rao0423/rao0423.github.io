@@ -1,0 +1,16 @@
+{
+  "name": "Rao Fu",
+  "short_name": "Rao Fu",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#fbfaf7",
+  "theme_color": "#fbfaf7",
+  "icons": [
+    {
+      "src": "/assets/img/favicons/icon.png",
+      "sizes": "1254x1254",
+      "type": "image/png",
+      "purpose": "any maskable"
+    }
+  ]
+}
