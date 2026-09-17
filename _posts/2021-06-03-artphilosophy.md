@@ -49,8 +49,8 @@ pin: false
 ## 2.2 《奥林匹亚》：现代性的阶级与危险性
 在这一过渡期中，边缘的人物似乎更能通过展现这座城市中压抑的欲望从而表现城市的特征。马奈颇受争议的《奥林匹亚》最初也正是因为触碰到了妓女这一话题而遭到极大的批评与愤怒。在资产阶级社会中裸露的身体、妓女以及卖淫，“性”成为极度敏感的话题。  
 
-<figure align="center">
-<img alt="" src="/assets/img/legacy/图2.1.jpg" style="width:80%">
+<figure style="text-align: center;">
+<img alt="" src="/assets/img/legacy/图2.1.jpg" style="width:80%; display: block; margin-left: auto; margin-right: auto;">
 <figcaption>图2.1 马奈《奥林匹亚》 1863年 布面油画 131×190cm 巴黎奥赛博物馆藏</figcaption>
 </figure>
 
@@ -73,16 +73,16 @@ pin: false
 这一把握“转瞬即逝”瞬间的努力很容易让人联想到摄影术的出现以及其在十九世纪的巴黎掀起巨大的热潮。马奈本人虽是一位摄影的爱好者，会利用照片辅助自己的创作、且在光线与构图的运用上受到摄影的影响，但我们在马奈绘画上看到的更多并非是技术性、摄影性的现代，而是在破碎的、易逝的、飘忽不定的现代生活图景中，找到某种短暂的、瞬间的美并将之成为永恒的努力。人物的前后故事、画中与画外的剧情，浓缩于一刹那的感觉印记，形成某种短暂即永恒的“时间体验”。  
 
 
-<figure align="center">
-<img alt="" src="/assets/img/legacy/图3.1.jpg" style="width:80%">
+<figure style="text-align: center;">
+<img alt="" src="/assets/img/legacy/图3.1.jpg" style="width:80%; display: block; margin-left: auto; margin-right: auto;">
 <figcaption>图3.1 马奈《在温室》1879年 布面油画 115×150cm 柏林国立博物院藏</figcaption>
 </figure>
 
 
 《在花园温室里》这一幅画中，可以看到马奈作为艺术家对本真性的理解，以及与摄影在本质意义上的差别。画中在私密花房里的模特夫妇摆了很多回姿势，但马奈捕捉到的依然是最初本质的一个瞬间，即吉耶梅夫妇的貌合神离与疏离感——面无表情的脸庞、男女可能触碰但始终未触碰到的双手。而事实是，这对夫妇在此后的确离婚。由于绘画并非在一瞬间完成，因而捕捉到那一瞬间模特本质，并将其呈现于画作上，这一时间与空间的努力。同作为印象派的画家，莫奈的努力是，试图以一个个“瞬间性”捕捉自然中的光与色；而马奈则通过层叠地修改，经营出某种“永恒性”的假象，通过个人的建构给予观者一个整全的印象 。  
 
-<figure align="center">
-<img alt="" src="/assets/img/legacy/图3.2.jpg" style="width:80%">
+<figure style="text-align: center;">
+<img alt="" src="/assets/img/legacy/图3.2.jpg" style="width:80%; display: block; margin-left: auto; margin-right: auto;">
 <figcaption>图3.2 马奈《卖啤酒的女郎》1878-1879年 布面油画 77×65cm 巴黎奥赛博物馆藏</figcaption>
 </figure>  
 
@@ -108,13 +108,13 @@ pin: false
 福柯在谈论马奈的讲座中分为三部分讲述其绘画的颠覆性进程，包括处理油画空间的方式、处理光照的问题、处理观者与画的位置。而三者共同为了说明，在认识论的层面上，马奈颠覆了此前观画的方式：通过内在光照的使用、裁断视角的处理——即对油画整个物质特性的巧妙运用，使观者确切地意识到画布的空间，观者在可见中看到“不可见性”的画布外景色，同时使观者有欲望去翻转以认识画布未展现的更多事物。而画面人物目光中指向的种种观者不可见的事物，并非是“不可见”，而只是“非可见”的。即绘画不仅表现了可见物、让观者能看到的部分，也使得观者意识到不可见性也是一种可见。  
 
 
-<figure align="center">
-<img alt="" src="/assets/img/legacy/图4.1.jpg" style="width:80%">
+<figure style="text-align: center;">
+<img alt="" src="/assets/img/legacy/图4.1.jpg" style="width:80%; display: block; margin-left: auto; margin-right: auto;">
 <figcaption>图4.1 马奈《卖啤酒的女郎》1873年 布面油画 59x72cm 华盛顿国家艺术画廊藏</figcaption>
 </figure>  
 
-<figure align="center">
-<img alt="" src="/assets/img/legacy/图4.2.jpeg" style="width:80%">
+<figure style="text-align: center;">
+<img alt="" src="/assets/img/legacy/图4.2.jpeg" style="width:80%; display: block; margin-left: auto; margin-right: auto;">
 <figcaption>图4.2 提香《乌比诺的维纳斯》1538年 布面油画 119.2×165.5cm 佛罗伦萨乌菲齐博物馆藏</figcaption>
 </figure>  
 
@@ -123,15 +123,15 @@ pin: false
 
 第二，处理光照上，福柯论述马奈如何在画中使用外界实光，而不是使用来自画内的表现光。这一视角给予了《奥林匹亚》进一步的理解，同时代的观者与批评家之所以对此如此愤怒、使这幅画变成一种不可面对的丑闻，其一原因或许是在马奈扁平化的处理中，观者的目光成为裸露的妓女身体的光源。而对比提香的《乌尔比诺的维纳斯》，左侧高处的光线自画面中透射而来，照在维纳斯的乳房与腿上，则是神性的、可见的，光源在画面内部。而在《奥林匹亚》画面中不存在光照，只有裸体的妓女与处在光照处、投射以光源的观者，观者是奥林匹亚可见性的原因，“光离不开自己形成的方式”。又马奈的另一幅作品《阳台》同样昭示着画外的光源，影子在后部，使左上角的人几乎不可见。
 
-<figure align="center">
-<img alt="" src="/assets/img/legacy/图4.3.jpg" style="width:80%">
+<figure style="text-align: center;">
+<img alt="" src="/assets/img/legacy/图4.3.jpg" style="width:80%; display: block; margin-left: auto; margin-right: auto;">
 <figcaption>图4.3 马奈《弗里·贝尔杰酒吧》1881-1882年 
 布面油画 96×130cm 伦敦考陶尔德学院画廊 </figcaption>
 </figure>  
 
 
-<figure align="center">
-<img alt="" src="/assets/img/legacy/图4.4.jpg" style="width:80%">
+<figure style="text-align: center;">
+<img alt="" src="/assets/img/legacy/图4.4.jpg" style="width:80%; display: block; margin-left: auto; margin-right: auto;">
 <figcaption>图4.4 马奈《铁路》1873年 布面油画 93×112cm 华盛顿国家艺术画廊藏</figcaption>
 </figure>  
 
@@ -157,8 +157,8 @@ pin: false
 
 福柯无疑受到笛卡尔怀疑主义传统的影响，然而却比笛卡尔更深地走进了一步，这一怀疑视角也同样是他观看马奈绘画的视角。 福柯谈马奈的绘画，不同于其他评论家的是，不仅会将自己置身于画中的场景、想象画中人物本身传达出来的东西，而颇为重视观画者在画布外的目光。这一方面是其重视油画物质性的思想体现，另一方面也是他怀疑立场在观画意义上的表现——福柯曾在访谈中回答，他怀疑任何过去的、或无时间性的伟大真理。  
 
-<figure align="center">
-<img alt="" src="/assets/img/legacy/图4.5.jpg" style="width:80%">
+<figure style="text-align: center;">
+<img alt="" src="/assets/img/legacy/图4.5.jpg" style="width:80%; display: block; margin-left: auto; margin-right: auto;">
 <figcaption>图4.5 马奈《阳台》1868-1869年 布面油画 170×125cm 巴黎奥赛博物馆藏</figcaption>
 </figure>  
 
