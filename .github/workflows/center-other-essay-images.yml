@@ -1,0 +1,68 @@
+name: Center other essay images
+
+on:
+  push:
+    paths:
+      - '.github/workflows/center-other-essay-images.yml'
+
+permissions:
+  contents: write
+
+jobs:
+  center-images:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Check out repository
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - name: Center images in remaining essays
+        run: |
+          python - <<'PY'
+          from pathlib import Path
+          import re
+
+          paths = [
+              Path('_posts/2021-06-03-artphilosophy.md'),
+              Path('_posts/2021-12-23-discoelysium.md'),
+              Path('_posts/2022-02-28-Alchemystars.md'),
+          ]
+
+          def fix_img(match):
+              tag = match.group(0)
+              style_match = re.search(r'style="([^"]*)"', tag)
+              if style_match:
+                  style = style_match.group(1).strip()
+                  additions = []
+                  if 'display:' not in style:
+                      additions.append('display: block')
+                  if 'margin-left:' not in style:
+                      additions.append('margin-left: auto')
+                  if 'margin-right:' not in style:
+                      additions.append('margin-right: auto')
+                  if additions:
+                      if style and not style.endswith(';'):
+                          style += ';'
+                      if style:
+                          style += ' '
+                      style += '; '.join(additions) + ';'
+                      tag = tag[:style_match.start(1)] + style + tag[style_match.end(1):]
+              else:
+                  tag = tag[:-1] + ' style="display: block; margin-left: auto; margin-right: auto;">'
+              return tag
+
+          for path in paths:
+              text = path.read_text(encoding='utf-8')
+              text = text.replace('<figure align="center">', '<figure style="text-align: center;">')
+              text = re.sub(r'<img\b[^>]*>', fix_img, text)
+              path.write_text(text, encoding='utf-8')
+          PY
+
+      - name: Commit and push
+        run: |
+          git config user.name 'github-actions[bot]'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          git add _posts/2021-06-03-artphilosophy.md _posts/2021-12-23-discoelysium.md _posts/2022-02-28-Alchemystars.md
+          git commit -m 'Center images in remaining essays'
+          git push
